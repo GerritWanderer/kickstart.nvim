@@ -4,4 +4,3 @@ return {
     require('auto-session').setup {}
   end,
 }
-
