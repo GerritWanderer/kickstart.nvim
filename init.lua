@@ -166,7 +166,7 @@ vim.keymap.set('n', '<S-h>', '<cmd>bprevious<CR>', { desc = 'Previous buffer' })
 vim.keymap.set('n', '<S-l>', '<cmd>bnext<CR>', { desc = 'Next buffer' })
 
 -- Quit Neovim completely
-vim.keymap.set('n', '<leader>qq', '<cmd>qa<CR>', { desc = '[Q]uit all buffers and exit Neovim' })
+vim.keymap.set('n', '<S-Q><S-Q>', '<cmd>wq<CR>', { desc = 'Save and quit (like ZZ)' })
 
 -- Save file with Ctrl+S
 vim.keymap.set('n', '<C-s>', '<cmd>w<CR>', { desc = 'Save file' })
