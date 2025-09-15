@@ -11,7 +11,7 @@ return {
       desc = 'Delete Buffer',
     },
     {
-      '<leader>gg',
+      '<leader>g',
       function()
         require('snacks').lazygit()
       end,
