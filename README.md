@@ -1,5 +1,21 @@
 # kickstart.nvim
 
+## Customizations
+
+  - Removed: Large documentation comment block explaining what Kickstart is
+  - Updated: Changed vim.g.have_nerd_font from false to true
+  - Added: Tab configuration (2 spaces, expand tabs, soft tab stop)
+  - Added: New keymaps:
+    - Buffer navigation (<S-h>, <S-l>)
+    - Quick quit (<S-Q><S-Q>)
+    - Save file (<C-s>)
+  - Modified: Commented out window navigation keymaps (<C-hjkl>) with note about smart splits
+  - Removed: Entire telescope plugin configuration (moved to separate file)
+  - Enabled: ts_ls language server
+  - Changed: Blink completion preset from default to enter
+  - Enabled: Several kickstart plugins (indent_line, lint, autopairs, neo-tree, gitsigns)
+  - Enabled: Custom plugin imports from lua/custom/plugins/
+
 ## Introduction
 
 A starting point for Neovim that is:
