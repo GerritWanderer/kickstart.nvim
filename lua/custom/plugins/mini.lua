@@ -9,11 +9,6 @@ return {
         replace = 'sr',
       },
     }
-    require('mini.move').setup {
-      down = '<A-j>',
-      up = '<A-k>',
-      line_down = '<A-j>',
-      line_up = '<A-k>',
-    }
+    require('mini.move').setup {}
   end,
 }
