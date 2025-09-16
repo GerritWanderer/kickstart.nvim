@@ -67,6 +67,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
           mappings = {
             n = {
               ['<CR>'] = 'select_default',
+              ['<C-d>'] = 'delete_buffer',
             },
           },
         },
