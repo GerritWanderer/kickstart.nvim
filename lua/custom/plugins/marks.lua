@@ -5,13 +5,11 @@ return {
       default_mappings = true,
       signs = true,
       mappings = {
-        set_next = 'm,',
-        next = 'm]',
-        prev = 'm[',
+        next = ']mm',
+        prev = '[mm',
         delete = 'dm',
         delete_buf = 'dm<space>',
       },
     }
   end,
 }
-
