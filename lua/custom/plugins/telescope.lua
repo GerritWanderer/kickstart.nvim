@@ -60,6 +60,12 @@ return { -- Fuzzy Finder (files, lsp, etc)
           height = 0.80,
           preview_cutoff = 120,
         },
+        mappings = {
+          i = {
+            ['<C-n>'] = 'cycle_history_next',
+            ['<C-p>'] = 'cycle_history_prev',
+          },
+        },
       },
       pickers = {
         buffers = {
