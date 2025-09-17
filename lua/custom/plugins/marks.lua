@@ -8,7 +8,7 @@ return {
         next = ']mm',
         prev = '[mm',
         delete = 'dm',
-        delete_buf = 'dm<space>',
+        delete_buf = 'dM',
       },
     }
   end,

@@ -4,7 +4,7 @@ return {
   lazy = false,
   keys = {
     {
-      '<leader>bd',
+      'db',
       function()
         require('snacks').bufdelete()
       end,
