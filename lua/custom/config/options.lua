@@ -1,4 +1,3 @@
-vim.g.have_nerd_font = true
 vim.o.relativenumber = false
 vim.o.timeoutlen = 500
 
