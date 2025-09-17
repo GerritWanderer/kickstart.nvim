@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = true
+vim.g.have_nerd_font = false
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -102,7 +102,7 @@ vim.g.have_nerd_font = true
 vim.o.number = true
 -- You can also add relative line numbers, to help with jumping.
 --  Experiment for yourself to see if you like it!
-vim.o.relativenumber = false
+-- vim.o.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
@@ -166,12 +166,6 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
--- Set tab width to 2 spaces
-vim.o.tabstop = 2 -- Width of a hard tabstop measured in 'spaces'
-vim.o.shiftwidth = 2 -- Size of an indent measured in 'spaces'
-vim.o.expandtab = true -- Use spaces instead of tab characters
-vim.o.softtabstop = 2 -- Number of 'spaces' that a <Tab> feels like
-
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -181,13 +175,6 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
-
--- Save file with Ctrl+S
-vim.keymap.set({ 'i', 'x', 'n', 's' }, '<C-s>', '<cmd>w<cr><esc>', { desc = 'Save File' })
-
--- Center screen when scrolling up/down
-vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll up and center' })
-vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll down and center' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -1024,6 +1011,9 @@ require('lazy').setup({
     },
   },
 })
+
+require 'custom.config.options'
+require 'custom.config.keymaps'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
