@@ -10,6 +10,5 @@ return {
       },
     }
     require('mini.move').setup {}
-    require('mini.files').setup {}
   end,
 }

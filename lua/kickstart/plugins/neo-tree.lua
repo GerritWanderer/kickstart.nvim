@@ -10,13 +10,13 @@ return {
     'MunifTanjim/nui.nvim',
   },
   lazy = false,
-  keys = {
-    { '<leader>e', ':Neotree toggle<CR>', desc = 'NeoTree toggle', silent = true },
-  },
   opts = {
     window = {
+      position = 'float',
       mappings = {
         ['s'] = false,
+        ['S'] = 'open_vsplit',
+        ['p'] = 'focus_preview',
       },
     },
     buffers = {
@@ -38,7 +38,6 @@ return {
       window = {
         mappings = {
           ['s'] = false,
-          ['<leader>e'] = 'close_window',
           ['l'] = 'open',
           ['h'] = 'close_node',
         },
