@@ -5,8 +5,8 @@ return {
       default_mappings = true,
       signs = true,
       mappings = {
-        next = ']mm',
-        prev = '[mm',
+        next = ']m',
+        prev = '[m',
         delete = 'dm',
         delete_buf = 'dM',
       },
