@@ -73,7 +73,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
         },
         live_grep = {
           additional_args = function()
-            return { "--hidden" }
+            return { '--hidden' }
           end,
         },
         buffers = {
@@ -96,6 +96,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
     -- Enable Telescope extensions if they are installed
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
+    pcall(require('telescope').load_extension, 'yank_history')
 
     -- See `:help telescope.builtin`
     local builtin = require 'telescope.builtin'
